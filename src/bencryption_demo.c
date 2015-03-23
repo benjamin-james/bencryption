@@ -44,7 +44,7 @@ int loadText(uint32_t *str, char *filename, uint8_t isUnicode)
 		//for(i = 0;fscanf(file,"%x ",str + i); i++);
 		char buf[4096];
 		char *p;
-		while(p = fgets(buf, sizeof(buf), file)) 
+		while((p = fgets(buf, sizeof(buf), file)) != NULL) 
 		{
 			int n = 0;
 			uint32_t t = 0;
