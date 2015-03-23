@@ -15,7 +15,7 @@
 #define ROTL(x,y) (((x)<<(y&(w-1))) | ((x)>>(w-(y&(w-1)))))
 #define ROTR(x,y) (((x)>>(y&(w-1))) | ((x)<<(w-(y&(w-1)))))
  
-uint32_t S[R24 - 1];        //key schedule
+uint32_t S[R24];        //key schedule
 
 void encrypt(uint32_t *pt, uint32_t *ct, int32_t len)
 {
