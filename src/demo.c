@@ -1,6 +1,7 @@
 #include "bencryption_demo.h"
 #include "stdio.h"
 #include "stdlib.h"
+#include "string.h"
 
 const char options[5][10] = {
  "--mode","--message","--key","--input","--output"
